@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prices</title>
+    </head>
+
+    <style>
+        header{
+            position: fixed;
+            margin-left: 0;
+            margin-top: 5px;
+            font-size: 35px;
+            text-align: center;
+            color: whitesmoke;
+            border: solid;
+            height: 9%;
+            width: 100%;
+            background-color: rgb(124, 165, 151);
+
+            animation-name: example;
+            animation-duration: 3s;  
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes example {
+        from {top: 0px;}
+        to {top: 50px;}
+        }
+
+        table{
+            margin-top: 200px;
+            margin-left: 200px;
+            margin-bottom: 200px;
+
+        }
+
+        td{
+            padding-left: 40px;
+            padding-top: 30px;
+        }
+        tr{
+            margin-top: 30px;
+        }
+
+        input{
+            width: 70px;
+        }
+
+        .lemor button{
+            width: 50px;
+        }
+
+        .organic button{
+            width: 50px;
+        }
+
+        .wild button{
+            width: 50px;
+        }
+
+        .chupa button{
+            width: 50px;
+        }
+
+        .berries button{
+            width: 50px;
+        }
+
+        .Kacchi button{
+            width: 50px;
+        }
+
+        .kala button{
+            width: 50px;
+        }
+
+        .alpenliebe button{
+            width: 50px;
+        }
+
+        .mnm button{
+            width: 50px;
+        }
+
+        .poppins button{
+            width: 50px;
+        }
+
+        .derby button{
+            width: 50px;
+        }
+
+        .nature button{
+            width: 50px;
+        }
+
+        .tangy button{
+            width: 50px;
+        }
+
+        .nathans button{
+            width: 50px;
+        }
+
+        .rola button{
+            width: 50px;
+        }
+
+        .coal button{
+            width: 50px;
+        }
+
+        .cadburry button{
+            width: 50px;
+        }
+
+        .fruitella button{
+            width: 50px;
+        }
+
+        .skittles button{
+            width: 50px;
+        }
+
+        .lemon button{
+            width: 50px;
+        }
+
+        img{
+            width: 60px; margin-left: 40px;
+        }
+
+        footer{
+            position: fixed;
+            text-align: center;
+
+        }
+    </style>
+
+    <script type="text/javascript" src="js\getPrice.js">
+    </script>
+    <header>
+        <table>
+            <tr>
+                Welcome to Nikunj's Candy Shop
+            </tr>
+        </table>
+    </header>
+
+    <body>
+        <table>
+            <tr>
+                <td class="lemor">
+                    <img src="img\lemor_mint.jpg"><br>
+                    <input type="number" id="Lemor" placeholder="Quantity">
+                    <button onclick="getPrice('Lemor')">Price</button>
+                    <h5 id="LemorValue"></h5>
+                </td>
+                <td class="organic">
+                    <img src="img\organic_world_jelly.jfif" height="80px"><br>
+                    <input type="number" id="Organic" placeholder="Quantity">
+                    <button onclick="getPrice('Organic')">Price</button>
+                    <h5 id="OrganicValue"></h5>
+                </td>
+                <td class="wild">
+                    <img src="img\wild_berry.jfif"  height="80px"><br>
+                    <input type="number" id="Wild" placeholder="Quantity">
+                    <button onclick="getPrice('Wild')">Price</button>
+                    <h5 id="WildValue"></h5>
+                </td>
+                <td class="chupa">
+                    <img src="img\chupa_chups.jfif"  height="80px"><br>
+                    <input type="number" id="Chupa" placeholder="Quantity">
+                    <button onclick="getPrice('Chupa')">Price</button>
+                    <h5 id="ChupaValue"></h5>
+                </td>
+                <td class="berries">
+                    <img src="img\gummy_berries.jfif"  height="80px"><br>
+                    <input type="number" id="Berries" placeholder="Quantity">
+                    <button onclick="getPrice('Berries')">Price</button>
+                    <h5 id="BerriesValue"></h5>
+                </td>
+            </tr>
+
+            <tr>
+                 <td class="mnm">
+                    <img src="img\mnms_candy.jfif" height="80px"><br>
+                    <input type="number" id="M&M" placeholder="Quantity">
+                    <button onclick="getPrice('M&M')">Price</button>
+                    <h5 id="M&MValue"></h5>
+                </td>
+                <td class="Kacchi">
+                    <img src="img\kacchi_keri.jfif" height="80px"><br>
+                    <input type="number" id="Kacchi" placeholder="Quantity">
+                    <button onclick="getPrice('Kacchi')">Price</button>
+                    <h5 id="KacchiValue"></h5>
+                </td>
+                <td class="poppins">
+                    <img src="img\parle_poppins.jfif" height="80px"><br>
+                    <input type="number" id="poppins" placeholder="Quantity">
+                    <button onclick="getPrice('poppins')">Price</button>
+                    <h5 id="poppinsValue"></h5>
+                </td>
+                <td class="kala">
+                    <img src="img\kala_khatta.jfif" height="80px"><br>
+                    <input type="number" id="kala" placeholder="Quantity">
+                    <button onclick="getPrice('kala')">Price</button>
+                    <h5 id="kalaValue"></h5>
+                </td>
+                <td class="alpenliebe">
+                    <img src="img\alpenliebe_gold.jfif" height="80px"><br>
+                    <input type="number" id="alpenliebe" placeholder="Quantity">
+                    <button onclick="getPrice('alpenliebe')">Price</button>
+                    <h5 id="alpenliebeValue"></h5>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="derby">
+                    <img src="img\derby_yummy.jfif" height="80px"><br>
+                    <input type="number" id="derby" placeholder="Quantity">
+                    <button onclick="getPrice('derby')">Price</button>
+                    <h5 id="derbyValue"></h5>
+                </td>
+                <td class="nature">
+                    <img src="img\nature_homies.jfif" height="80px"><br>
+                    <input type="number" id="nature" placeholder="Quantity">
+                    <button onclick="getPrice('nature')">Price</button>
+                    <h5 id="natureValue"></h5>
+                </td>
+                <td class="tangy">
+                    <img src="img\freshocartz_tangy.jfif" height="80px"><br>
+                    <input type="number" id="tangy" placeholder="Quantity">
+                    <button onclick="getPrice('tangy')">Price</button>
+                    <h5 id="tangyValue"></h5>
+                </td>
+                <td class="nathans">
+                    <img src="img\nathans_orange.jfif" height="80px"><br>
+                    <input type="number" id="nathans" placeholder="Quantity">
+                    <button onclick="getPrice('nathans')">Price</button>
+                    <h5 id="nathansValue"></h5>
+                </td>
+                <td class="rola">
+                    <img src="img\rola_cola.jfif" height="80px"><br>
+                    <input type="number" id="rola" placeholder="Quantity">
+                    <button onclick="getPrice('rola')">Price</button>
+                    <h5 id="rolaValue"></h5>
+                </td>
+            </tr>
+                
+            <tr>
+                <td class="coal">
+                    <img src="img\coal_candy.jfif" height="80px"><br>
+                    <input type="number" id="coal" placeholder="Quantity">
+                    <button onclick="getPrice('coal')">Price</button>
+                    <h5 id="coalValue"></h5>
+                </td>
+                <td class="cadburry">
+                    <img src="img\cadbury_gems.jfif" height="80px"><br>
+                    <input type="number" id="cadburry" placeholder="Quantity">
+                    <button onclick="getPrice('cadbury')">Price</button>
+                    <h5 id="cadburyValue"></h5>
+                </td>
+                <td class="fruitella">
+                    <img src="img\fruitella_candy.jfif" height="80px"><br>
+                    <input type="number" id="fruitella" placeholder="Quantity">
+                    <button onclick="getPrice('fruitella')">Price</button>
+                    <h5 id="fruitellaValue"></h5>
+                </td>
+                <td class="skittles">
+                    <img src="img\skittles.jfif" height="80px"><br>
+                    <input type="number" id="skittles" placeholder="Quantity">
+                    <button onclick="getPrice('skittles')">Price</button>
+                    <h5 id="skittlesValue"></h5>
+                </td>
+                <td class="lemon">
+                    <img src="img\lemor_lemon.jfif" height="80px"><br>
+                    <input type="number" id="lemon" placeholder="Quantity">
+                    <button onclick="getPrice('lemon')">Price</button>
+                    <h5 id="lemonValue"></h5>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+    <footer>
+        <label>copyright @Nikunjs Candy Shop..... All rights reserved</label>
+    </footer>
+</html>
